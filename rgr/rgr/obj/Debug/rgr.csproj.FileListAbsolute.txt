@@ -8,3 +8,13 @@ C:\Users\Лис\source\repos\rgr\rgr\obj\Debug\rgr.csproj.GenerateResource.Cache
 C:\Users\Лис\source\repos\rgr\rgr\obj\Debug\rgr.csproj.CoreCompileInputs.cache
 C:\Users\Лис\source\repos\rgr\rgr\obj\Debug\rgr.exe
 C:\Users\Лис\source\repos\rgr\rgr\obj\Debug\rgr.pdb
+C:\Users\Лис\Documents\GitHub\RGR\rgr\rgr\bin\Debug\rgr.exe.config
+C:\Users\Лис\Documents\GitHub\RGR\rgr\rgr\bin\Debug\rgr.exe
+C:\Users\Лис\Documents\GitHub\RGR\rgr\rgr\bin\Debug\rgr.pdb
+C:\Users\Лис\Documents\GitHub\RGR\rgr\rgr\obj\Debug\rgr.csprojResolveAssemblyReference.cache
+C:\Users\Лис\Documents\GitHub\RGR\rgr\rgr\obj\Debug\rgr.Form1.resources
+C:\Users\Лис\Documents\GitHub\RGR\rgr\rgr\obj\Debug\rgr.Properties.Resources.resources
+C:\Users\Лис\Documents\GitHub\RGR\rgr\rgr\obj\Debug\rgr.csproj.GenerateResource.Cache
+C:\Users\Лис\Documents\GitHub\RGR\rgr\rgr\obj\Debug\rgr.csproj.CoreCompileInputs.cache
+C:\Users\Лис\Documents\GitHub\RGR\rgr\rgr\obj\Debug\rgr.exe
+C:\Users\Лис\Documents\GitHub\RGR\rgr\rgr\obj\Debug\rgr.pdb

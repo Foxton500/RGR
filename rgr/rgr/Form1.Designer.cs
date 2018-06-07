@@ -59,12 +59,12 @@
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.button3 = new System.Windows.Forms.Button();
-            this.OutputLabel = new System.Windows.Forms.Label();
-            this.InputBox = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.InputBox = new System.Windows.Forms.TextBox();
+            this.OutputLabel = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             this.TabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -164,6 +164,7 @@
             this.HourBox.Size = new System.Drawing.Size(139, 20);
             this.HourBox.TabIndex = 0;
             this.HourBox.Text = "0";
+            this.HourBox.TextChanged += new System.EventHandler(this.HourBox_TextChanged);
             // 
             // tabPage2
             // 
@@ -374,30 +375,23 @@
             this.tabPage5.Text = "String";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // label9
             // 
-            this.button3.Location = new System.Drawing.Point(339, 80);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(115, 92);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(3, 3);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(403, 13);
+            this.label9.TabIndex = 5;
+            this.label9.Text = "(Внимание, вводите без пробелов. В случае наличия, пробелы будут удалены)";
             // 
-            // OutputLabel
+            // label7
             // 
-            this.OutputLabel.AutoSize = true;
-            this.OutputLabel.Location = new System.Drawing.Point(30, 172);
-            this.OutputLabel.Name = "OutputLabel";
-            this.OutputLabel.Size = new System.Drawing.Size(0, 13);
-            this.OutputLabel.TabIndex = 1;
-            // 
-            // InputBox
-            // 
-            this.InputBox.Location = new System.Drawing.Point(33, 80);
-            this.InputBox.Name = "InputBox";
-            this.InputBox.Size = new System.Drawing.Size(100, 20);
-            this.InputBox.TabIndex = 2;
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(30, 159);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(98, 13);
+            this.label7.TabIndex = 4;
+            this.label7.Text = "Выходная строка:";
             // 
             // label8
             // 
@@ -409,23 +403,30 @@
             this.label8.Text = "Входная строка:";
             this.label8.UseMnemonic = false;
             // 
-            // label7
+            // InputBox
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(30, 159);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(98, 13);
-            this.label7.TabIndex = 4;
-            this.label7.Text = "Выходная строка:";
+            this.InputBox.Location = new System.Drawing.Point(33, 80);
+            this.InputBox.Name = "InputBox";
+            this.InputBox.Size = new System.Drawing.Size(100, 20);
+            this.InputBox.TabIndex = 2;
             // 
-            // label9
+            // OutputLabel
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(3, 3);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(403, 13);
-            this.label9.TabIndex = 5;
-            this.label9.Text = "(Внимание, вводите без пробелов. В случае наличия, пробелы будут удалены)";
+            this.OutputLabel.AutoSize = true;
+            this.OutputLabel.Location = new System.Drawing.Point(30, 172);
+            this.OutputLabel.Name = "OutputLabel";
+            this.OutputLabel.Size = new System.Drawing.Size(0, 13);
+            this.OutputLabel.TabIndex = 1;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(339, 80);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(115, 92);
+            this.button3.TabIndex = 0;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Form1
             // 

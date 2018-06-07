@@ -23,44 +23,22 @@ namespace rgr
         {
             double minute = 0, hour = 0;
 
-            if (HourBox.Text == "")
+
+
+            try
             {
-                if (MinuteBox.Text == "")
-                {
-                    minute = 0;
-                    hour = 0;
-                }
-                else
-                {
-                    hour = 0;
-                    try
-                    {
-                        minute = Convert.ToDouble(MinuteBox.Text);                       
-                    }
-                    catch (Exception)
-                    {
-                        MessageBox.Show("Wrong format");
-                        ResultMinuteBox.Text = "Error";
-                    }
-                }            
-                
+                minute = Convert.ToDouble(MinuteBox.Text);
+                hour = Convert.ToDouble(HourBox.Text);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Wrong format");
+                ResultMinuteBox.Text = "Error";
             }
 
-            if(MinuteBox.Text == "")
-            {
-                minute = 0;
-                try
-                {
-                    hour = Convert.ToDouble(MinuteBox.Text);                    
-                }
-                catch (Exception)
-                {
-                    MessageBox.Show("Wrong format");
-                    ResultMinuteBox.Text = "Error";
-                }
-            }
-            
+
             ResultMinuteBox.Text = (minute + hour * 60).ToString();
+
             
         }
 
@@ -197,27 +175,28 @@ namespace rgr
                             }
                         }
                     }
-                }
-                /*if (String[i] >= 'a' && String[i] <= 'z')
-                {
-                    if (String[i+1] >= 'a' && String[i+1] <= 'z')
-                    {
-                        String = String.Replace(String[i], ' ');
-                        IsLastRemoved = true;
-                    }
                     else
                     {
                         if (IsLastRemoved == true)
                         {
-                            String = String.Replace(String[i], ' ');
+                            String = String.Remove(i, 1);
                             IsLastRemoved = false;
+                            --i;
+                            --Length;
                         }
                     }
                 }
-                */
+                
             }
             String = String.Replace(" ", "");
             OutputLabel.Text = String;
         }
+
+        private void HourBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }
